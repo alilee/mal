@@ -81,7 +81,7 @@ IMPLS = ada awk bash basic c d chuck clojure coffee clisp cpp crystal cs erlang 
 	elixir es6 factor forth fsharp go groovy guile haskell haxe \
 	io java julia js kotlin logo lua make mal ocaml matlab miniMAL \
 	nim objc objpascal perl perl6 php pil plpgsql plsql powershell ps \
-	python r racket rpython ruby rust scala swift swift3 tcl vb vhdl \
+	python r racket rpython ruby rust rustali scala swift swift3 tcl vb vhdl \
 	vimscript
 
 step0 = step0_repl
@@ -196,6 +196,7 @@ racket_STEP_TO_PROG =  racket/$($(1)).rkt
 rpython_STEP_TO_PROG = rpython/$($(1))
 ruby_STEP_TO_PROG =    ruby/$($(1)).rb
 rust_STEP_TO_PROG =    rust/target/release/$($(1))
+rustali_STEP_TO_PROG = rustali/$($(1))
 scala_STEP_TO_PROG =   scala/target/scala-2.11/classes/$($(1)).class
 swift_STEP_TO_PROG =   swift/$($(1))
 swift3_STEP_TO_PROG =  swift3/$($(1))
