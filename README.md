@@ -6,7 +6,7 @@
 
 Mal is a Clojure inspired Lisp interpreter.
 
-Mal is implemented in 61 languages:
+Mal is implemented in 63 languages:
 
 * Ada
 * GNU awk
@@ -16,11 +16,12 @@ Mal is implemented in 61 languages:
 * C++
 * C#
 * ChucK
-* GNU CLISP
+* Common Lisp
 * Clojure
 * CoffeeScript
 * Crystal
 * D
+* Dart
 * Elixir
 * Emacs Lisp
 * Erlang
@@ -63,6 +64,7 @@ Mal is implemented in 61 languages:
 * Ruby
 * Rust
 * Scala
+* Skew
 * Swift
 * Swift 3
 * Tcl
@@ -236,14 +238,17 @@ cd chuck
 ./run
 ```
 
-### GNU CLISP
+### Common Lisp
 
-*The GNU CLISP implementation was created by [Iqbal Ansari](https://github.com/iqbalansari)*
+*The Common Lisp implementation was created by [Iqbal Ansari](https://github.com/iqbalansari)*
 
-The implementation has been tested with GNU CLISP v2.49 on Ubuntu 16.04, 14.04 and 12.04
+The implementation has been tested with SBCL, CCL, CMUCL, GNU CLISP, ECL and
+Allegro CL on Ubuntu 16.04 and Ubuntu 12.04, see
+the [README][common-lisp/README.org] for more details. Provided you have the
+dependencies mentioned installed, do the following to run the implementation
 
 ```
-cd clisp
+cd common-lisp
 make
 ./run
 ```
@@ -291,6 +296,17 @@ readline library.
 cd d
 make
 ./stepX_YYY
+```
+
+### Dart
+
+*The Dart implementation was created by [Harry Terkelsen](https://github.com/hterkelsen)*
+
+The Dart implementation has been tested with Dart 1.20.
+
+```
+cd dart
+dart ./stepX_YYY
 ```
 
 ### Emacs Lisp
@@ -789,6 +805,19 @@ sbt 'run-main stepX_YYY'
 sbt compile
 scala -classpath target/scala*/classes stepX_YYY
 ```
+
+### Skew ###
+
+*The Skew implementation was created by [Dov Murik](https://github.com/dubek)*
+
+The Skew implementation of mal has been tested with Skew 0.7.42.
+
+```
+cd skew
+make
+node stepX_YYY.js
+```
+
 
 ### Swift
 

@@ -101,6 +101,7 @@ r/lib
 scala/mal.jar
 scala/target
 scala/project
+skew/*.js
 tcl/mal.tcl
 vb/*.exe
 vb/*.dll
@@ -119,3 +120,7 @@ basic/step8_macros.bas
 basic/step9_try.bas
 basic/stepA_mal.bas
 basic/*.prg
+common-lisp/*.fasl
+common-lisp/*.lib
+common-lisp/images/*
+common-lisp/hist/*

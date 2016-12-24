@@ -77,11 +77,11 @@ DOCKERIZE =
 # Settings
 #
 
-IMPLS = ada awk bash basic c d chuck clojure coffee clisp cpp crystal cs erlang elisp \
-	elixir es6 factor forth fsharp go groovy guile haskell haxe \
-	io java julia js kotlin logo lua make mal ocaml matlab miniMAL \
+IMPLS = ada awk bash basic c d chuck clojure coffee common-lisp cpp crystal cs dart \
+	erlang elisp elixir es6 factor forth fsharp go groovy guile haskell \
+	haxe io java julia js kotlin logo lua make mal ocaml matlab miniMAL \
 	nim objc objpascal perl perl6 php pil plpgsql plsql powershell ps \
-	python r racket rpython ruby rust rustali scala swift swift3 tcl vb vhdl \
+	python r racket rpython ruby rust scala skew swift swift3 tcl vb vhdl \
 	vimscript
 
 step0 = step0_repl
@@ -153,10 +153,11 @@ d_STEP_TO_PROG =       d/$($(1))
 chuck_STEP_TO_PROG =   chuck/$($(1)).ck
 clojure_STEP_TO_PROG = clojure/target/$($(1)).jar
 coffee_STEP_TO_PROG =  coffee/$($(1)).coffee
-clisp_STEP_TO_PROG = clisp/$($(1)).fas
+common-lisp_STEP_TO_PROG =  common-lisp/$($(1))
 cpp_STEP_TO_PROG =     cpp/$($(1))
 crystal_STEP_TO_PROG = crystal/$($(1))
 cs_STEP_TO_PROG =      cs/$($(1)).exe
+dart_STEP_TO_PROG =    dart/$($(1)).dart
 elisp_STEP_TO_PROG =   elisp/$($(1)).el
 elixir_STEP_TO_PROG =  elixir/lib/mix/tasks/$($(1)).ex
 erlang_STEP_TO_PROG =  erlang/$($(1))
@@ -198,6 +199,7 @@ ruby_STEP_TO_PROG =    ruby/$($(1)).rb
 rust_STEP_TO_PROG =    rust/target/release/$($(1))
 rustali_STEP_TO_PROG = rustali/$($(1))
 scala_STEP_TO_PROG =   scala/target/scala-2.11/classes/$($(1)).class
+skew_STEP_TO_PROG =    skew/$($(1)).js
 swift_STEP_TO_PROG =   swift/$($(1))
 swift3_STEP_TO_PROG =  swift3/$($(1))
 tcl_STEP_TO_PROG =     tcl/$($(1)).tcl
