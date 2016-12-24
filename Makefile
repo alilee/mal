@@ -82,7 +82,8 @@ IMPLS = ada awk bash basic c d chuck clojure coffee common-lisp cpp crystal cs d
 	haxe io java julia js kotlin logo lua make mal ocaml matlab miniMAL \
 	nim objc objpascal perl perl6 php pil plpgsql plsql powershell ps \
 	python r racket rpython ruby rust scala skew swift swift3 tcl vb vhdl \
-	vimscript
+	vimscript \
+	rustali
 
 step0 = step0_repl
 step1 = step1_read_print
